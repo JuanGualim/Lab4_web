@@ -26,7 +26,7 @@ body {
 }
 
 .head {
-  width: var(--size);
+  width: calc(var(--size)*1.1);
   height: calc(var(--size) / 2);
   background: var(--android-color);
   border-radius: 200px 200px 0 0;
@@ -34,7 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -42,7 +42,7 @@ body {
 .antennas {
   display: flex;
   justify-content: center;
-  gap: calc(var(--size) / 3);
+  gap: calc(var(--size) / 2);
 }
 
 .antenna {
@@ -64,19 +64,19 @@ body {
 .eyes {
   display: flex;
   justify-content: center;
-  gap: calc(var(--size) / 4);
-  margin-bottom: 1rem;
+  gap: calc(var(--size) / 2.5);
+  margin-bottom: calc(var(--size) * 0.25);
 }
 
 .eyes > .eye {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   background: var(--eye-color);
   border-radius: 50%;
 }
 
 .torso {
-  width: var(--size);
+  width: calc(var(--size) * 1.1);
   height: var(--size);
   background: var(--android-color);
   border-radius: 0 0 40px 40px;
@@ -93,7 +93,7 @@ body {
 .arms {
   display: flex;
   justify-content: space-between;
-  width: 120%;
+  width: 145%;
 }
 
 .arm {
@@ -127,7 +127,7 @@ body {
 }
 
 .head + .torso {
-  margin-top: -10px;
+  margin-top: calc(var(--size) * 0.04);
 }
 
 .arm ~ .arm {
@@ -136,5 +136,9 @@ body {
 
 .android .eye {
   box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+.head {
+  padding-bottom: calc(var(--size) * 0.08);
 }
 
