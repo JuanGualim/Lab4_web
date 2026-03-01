@@ -18,6 +18,8 @@ body {
 .head {
   width: var(--size);
   height: calc(var(--size)/2);
+  background: var(--android-color);
+  border-radius: 100px 100px 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,6 +42,8 @@ body {
 .torso {
   width: var(--size);
   height: var(--size);
+  background: var(--android-color);
+  border-radius: 0 0 40px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
