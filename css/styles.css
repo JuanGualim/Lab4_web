@@ -12,3 +12,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.antennas {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.eyes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
