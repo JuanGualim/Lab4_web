@@ -16,34 +16,49 @@ body {
   align-items: center;
 }
 .head {
+  width: var(--size);
+  height: calc(var(--size)/2);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
 }
 .antennas {
+  width: 6px;
+  height: calc(var(--size)/4);
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
 .eyes {
+  width: 15px;
+  height: 15px;
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
 .torso {
+  width: var(--size);
+  height: var(--size);
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
 .arms {
+  width: calc(var(--size)/5);
+  height: calc(var(--size)*0.8);
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 .legs {
+  width: calc(var(--size)/5);
+  height: calc(var(--size)*0.6);
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+div {
+  border: 1px solid red;
 }
