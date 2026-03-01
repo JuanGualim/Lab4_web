@@ -52,6 +52,14 @@ body {
   border-radius: 10px;
 }
 
+.antenna:first-child {
+  transform: rotate(-20deg);
+}
+
+.antenna:last-child {
+  transform: rotate(20deg);
+}
+
 
 .eyes {
   display: flex;
@@ -60,7 +68,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.eye {
+.eyes > .eye {
   width: 15px;
   height: 15px;
   background: var(--eye-color);
@@ -94,6 +102,13 @@ body {
   background: var(--android-color);
   border-radius: 50px;
 }
+.arm:nth-child(1) {
+  margin-right: 1rem;
+}
+
+.arm:nth-child(2) {
+  margin-left: 1rem;
+}
 
 /* Piernas */
 
@@ -110,3 +125,16 @@ body {
   background: var(--android-color);
   border-radius: 50px;
 }
+
+.head + .torso {
+  margin-top: -10px;
+}
+
+.arm ~ .arm {
+  opacity: 0.95;
+}
+
+.android .eye {
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
