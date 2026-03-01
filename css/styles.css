@@ -1,11 +1,14 @@
-/* Reset básico */
+:root {
+  --android-color: #3ddc84;
+  --eye-color: white;
+  --size: clamp(180px, 25vw, 320px);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Centrar en pantalla */
 body {
   min-height: 100vh;
   display: flex;
@@ -24,6 +27,22 @@ body {
   gap: 2rem;
 }
 .eyes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.torso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.arms {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.legs {
   display: flex;
   justify-content: center;
   gap: 2rem;
